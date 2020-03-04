@@ -54,13 +54,13 @@ const Index = props => (
 );
 
 Index.getInitialProps = async function() {
-    const account_token = 'PT8YzkMO74fPqt8GoAD0+5EpkAdH6WTJ';
-    const user_token =  'gzSRj2TyEhnPqt8GoAD0+wymZArbWes0';
-    const groupid = '1560761320';
-    const profileid = '362460000';
+    const account_token = {account_token};
+    const user_token =  {user_token};
+    const groupid = {groupid};
+    const profileid = {profileid};
     let res = '';
     
-    res = await fetch('http://api.konnectinsights.com/v2.0/SocialMessages/Twitter?account_token='+ account_token + '&groupid='+ groupid+ '&user_token=' + user_token + '&profileid='+ profileid+'&since=2020-01-11%2000:00:00&until=2020-01-17%2023:59:59&resultType=json&limit=5&sortby=date&sort=desc');
+    res = await fetch('http://abc.datasource.com/v2.0/sm/Twitter?account_token='+ account_token + '&groupid='+ groupid+ '&user_token=' + user_token + '&profileid='+ profileid+'&resultType=json&limit=5&sortby=date&sort=desc');
         
     const data = await res.json();
     //console.log(data.docs);
