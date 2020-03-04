@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button'
 Blog.getInitialProps = async function() {  
   let insta = '';
 
-  insta = await fetch('https://graph.facebook.com/17841593698074073/recent_media?user_id=17841429712936619&access_token=EAAoush5u3f4BAF9beMg4ThyobDvHJTotZAhQDXGwOxTpF5p9zAMT0oCNlHDizAbZBTZCNmOofwbtopBRCppSohdClaumKA7OoSVt1ZAZB62CNHAJRTZAWx38yrRHRtPde1YjGT6N0qeWahTL3LNeFZCO8kZC2N7XashahNFeOQrPIJjWTVtpffArzwwK5FpVQKcZD&fields=id,caption,comments_count,like_count,media_type,media_url,permalink,children{media_url,id}');
+  insta = await fetch('https://graph.facebook.com/123456845672562/recent_media?user_id={user_id}&access_token={access_token}&fields=id,caption,comments_count,like_count,media_type,media_url,permalink,children{media_url,id}');
   const posts = await insta.json();
   console.log(posts.data)
 
