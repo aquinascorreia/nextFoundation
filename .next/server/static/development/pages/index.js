@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -105,9 +105,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Nav */ "./components/Nav.js");
-var _jsxFileName = "/home/aquinas/Documents/foundation/components/Layout.js";
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 const layoutStyle = {
   margin: 20,
@@ -116,19 +118,13 @@ const layoutStyle = {
 };
 
 const Layout = props => __jsx("div", {
-  style: layoutStyle,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 10
-  },
-  __self: undefined
-}, __jsx(_Nav__WEBPACK_IMPORTED_MODULE_1__["default"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 11
-  },
-  __self: undefined
-}), props.children);
+  style: layoutStyle
+}, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, null, __jsx("title", null, "Next Foundation"), __jsx("link", {
+  rel: "stylesheet",
+  href: "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css",
+  integrity: "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T",
+  crossorigin: "anonymous"
+})), __jsx(_Nav__WEBPACK_IMPORTED_MODULE_1__["default"], null), props.children);
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
 
@@ -147,7 +143,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/home/aquinas/Documents/foundation/components/Nav.js";
+var _jsxFileName = "C:\\Users\\Prudence\\Desktop\\Foundation\\components\\Nav.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -211,6 +207,19 @@ const Nav = () => {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Nav);
+
+/***/ }),
+
+/***/ "./css/styles.scss":
+/*!*************************!*\
+  !*** ./css/styles.scss ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"example": "example___rWYK0"
+};
 
 /***/ }),
 
@@ -1901,125 +1910,58 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "/home/aquinas/Documents/foundation/pages/index.js";
+/* harmony import */ var _css_styles_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../css/styles.scss */ "./css/styles.scss");
+/* harmony import */ var _css_styles_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_css_styles_scss__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_bootstrap_ButtonToolbar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap/ButtonToolbar */ "react-bootstrap/ButtonToolbar");
+/* harmony import */ var react_bootstrap_ButtonToolbar__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap_ButtonToolbar__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap/Button */ "react-bootstrap/Button");
+/* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_6__);
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
-const PostLink = props => __jsx("li", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
-}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-  href: "/p/[id]",
-  as: `/p/${props.id}`,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 7
-  },
-  __self: undefined
-}, __jsx("a", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8
-  },
-  __self: undefined
-}, props.title)));
 
-const Index = () => __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 14
-  },
-  __self: undefined
-}, __jsx("p", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 15
-  },
-  __self: undefined
-}, "Hello Next.js"), __jsx("h1", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 16
-  },
-  __self: undefined
-}, "My blog"), __jsx("ul", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 17
-  },
-  __self: undefined
-}, __jsx(PostLink, {
+
+
+const PostLink = props => __jsx("li", null, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  href: "/p/[id]",
+  as: `/p/${props.id}`
+}, __jsx("a", null, props.title)));
+
+const Index = props => __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], null, __jsx("p", {
+  className: _css_styles_scss__WEBPACK_IMPORTED_MODULE_4___default.a.example
+}, "Hello Next.js"), __jsx("h1", null, "My blog"), __jsx("ul", null, __jsx(PostLink, {
   id: "hello-nextjs",
-  title: "Hello nextjs",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 18
-  },
-  __self: undefined
+  title: "Hello nextjs"
 }), __jsx(PostLink, {
   id: "learn-nextjs",
-  title: "Learn nextjs",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 19
-  },
-  __self: undefined
+  title: "Learn nextjs"
 }), __jsx(PostLink, {
   id: "deploy-nextjs",
-  title: "Deploy nextjs",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 20
-  },
-  __self: undefined
-})), __jsx("h2", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 22
-  },
-  __self: undefined
-}, "Fetching data from external API"), __jsx("ul", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 23
-  },
-  __self: undefined
-}, props.shows.map(show => __jsx("li", {
-  key: show.id,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 25
-  },
-  __self: undefined
+  title: "Deploy nextjs"
+})), __jsx(react_bootstrap_ButtonToolbar__WEBPACK_IMPORTED_MODULE_5___default.a, null, __jsx(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_6___default.a, {
+  variant: "danger"
+}, "Danger")), __jsx("h2", null, "Fetching data from external API"), __jsx("ul", null, props.msgs.map(mg => __jsx("li", {
+  key: mg.UniqueMessageId
 }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
   href: "/p/[id]",
-  as: `/p/${show.id}`,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 26
-  },
-  __self: undefined
-}, __jsx("a", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 27
-  },
-  __self: undefined
-}, show.name))))));
+  as: `/p/${mg.UniqueMessageId}`
+}, __jsx("a", null, mg.UniqueMessageId))))));
 
 Index.getInitialProps = async function () {
-  const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()('http://api.konnectinsights.com/v2.0/SocialMessages/Facebook?account_token=KM9Rq2fpANuXl+o7XQFwbztli7MLxbRy&groupid=1550820345&user_token=MGuVc7qFQ22Xl+o7XQFwb1c4fse+RZcF&profileid=1578394727&since=2020-01-11%2000:00:00&until=2020-01-17%2023:59:59&resultType=json&limit=200&sortby=date&sort=desc');
-  const data = await res.json();
-  console.log(data);
-  console.log(`msgs data fetched. Count : ${data.length}`);
+  const account_token = 'PT8YzkMO74fPqt8GoAD0+5EpkAdH6WTJ';
+  const user_token = 'gzSRj2TyEhnPqt8GoAD0+wymZArbWes0';
+  const groupid = '1560761320';
+  const profileid = '362460000';
+  let res = '';
+  res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()('http://api.konnectinsights.com/v2.0/SocialMessages/Twitter?account_token=' + account_token + '&groupid=' + groupid + '&user_token=' + user_token + '&profileid=' + profileid + '&since=2020-01-11%2000:00:00&until=2020-01-17%2023:59:59&resultType=json&limit=5&sortby=date&sort=desc');
+  const data = await res.json(); //console.log(data.docs);
+  //console.log(`msgs data fetched. Count : ${data.docs.length}`);
+
   return {
-    shows: data.map(entry => entry.docs)
+    msgs: data.docs
   };
 };
 
@@ -2027,14 +1969,14 @@ Index.getInitialProps = async function () {
 
 /***/ }),
 
-/***/ 3:
+/***/ 5:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/aquinas/Documents/foundation/pages/index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! C:\Users\Prudence\Desktop\Foundation\pages\index.js */"./pages/index.js");
 
 
 /***/ }),
@@ -2105,6 +2047,17 @@ module.exports = require("isomorphic-unfetch");
 
 /***/ }),
 
+/***/ "next/head":
+/*!****************************!*\
+  !*** external "next/head" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/head");
+
+/***/ }),
+
 /***/ "prop-types":
 /*!*****************************!*\
   !*** external "prop-types" ***!
@@ -2135,6 +2088,28 @@ module.exports = require("prop-types-exact");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-bootstrap/Button":
+/*!*****************************************!*\
+  !*** external "react-bootstrap/Button" ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-bootstrap/Button");
+
+/***/ }),
+
+/***/ "react-bootstrap/ButtonToolbar":
+/*!************************************************!*\
+  !*** external "react-bootstrap/ButtonToolbar" ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-bootstrap/ButtonToolbar");
 
 /***/ }),
 

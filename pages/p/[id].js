@@ -6,7 +6,7 @@ const Post = () => {
 	return (
 		<Layout>
 			<h1>{router.query.id}</h1>
-			<p>This is the blog post</p>
+			<p>This is the dynamic blog post</p>
 		</Layout>
 	);
 };

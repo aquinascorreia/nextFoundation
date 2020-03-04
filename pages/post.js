@@ -1,23 +1,19 @@
-import { useRouter } from 'next/router'
+import React from 'react';
 import Layout from '../components/Layout'
+import {withRouter} from 'next/router'
 
+class Post extends React.Component {
+	render() {
+		debugger;
+		console.log(this.props);
 
-const Content = () => {
-   	const router = useRouter();
-   	return (
-   		<>
-   			<h1>{router.query.title}</h1>
-   			<p>This is th eblog post page</p>
-   		</>
-   	);
-};
+		return(
+			<Layout>
+				<h2>I m a Post page</h2>
+				<h1>{this.props.router.query.UniqueMessageId}</h1>
+			</Layout>
+		)
+	}
+}
 
-const Page = () => {
-	return(
-		<Layout>
-			<Content />
-		</Layout>
-	);
-};
-
-export default Page
+export default withRouter(Post);
